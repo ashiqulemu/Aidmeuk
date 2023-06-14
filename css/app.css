@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: TitilliumWeb-Regular;
+  src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "TitilliumWeb", sans-serif;
+  src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "Titillium Web-light", sans-serif;
+  src: url(../fonts/TitilliumWeb-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../fonts/Poppins-Light.otf);
+}
+@font-face {
+  font-family: "Titillium Web-bold", sans-serif;
+  src: url(../fonts/TitilliumWeb-Bold.ttf);
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1170px;
+  }
+}
+body {
+  font-family: TitilliumWeb-Regular;
+  font-size: 16px;
+  color: #777777;
+  overflow-x: hidden;
+}
+
+.z-index {
+  position: relative;
+  z-index: 1;
+}
+
+.topbar {
+  position: relative;
+}
+.topbar:before {
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 1% 100%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 1% 100%);
+  width: 1290px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #f4f2f1;
+  z-index: 0;
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+.social-links li {
+  display: flex;
+}
+.social-links li a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #777777;
+}
+.social-links li a:hover {
+  color: #EE9A40;
+}
+
+.navCustom .nav-item .nav-link {
+  margin-right: 0;
+  font-size: 16px;
+  color: #364f75;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "Poppins-Light";
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .navCustom .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+.navCustom .nav-item .nav-link:hover {
+  color: #EE9A40;
+}
+.navCustom .nav-item .nav-link.active {
+  color: #EE9A40;
+}
+.navCustom .nav-item .dropdown-menu {
+  border: 0;
+  border-top: 4px solid #EE9A40;
+}
+.navCustom .nav-item .dropdown-menu .dropdown-item {
+  font-family: "Poppins-Light";
+}
+.navCustom .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #0E0E4E;
+  color: #EE9A40;
+}
+.navCustom .nav-item .dropdown-menu .dropdown-item.active {
+  background-color: #0E0E4E;
+  color: #EE9A40;
+}
+.navCustom .dropdown-toggle:after {
+  content: unset;
+}
+.navCustom .dropdown-toggle .up {
+  display: none;
+  font-size: 1.4rem;
+}
+.navCustom .dropdown-toggle .down {
+  font-size: 1.4rem;
+}
+.navCustom .dropdown-toggle.show .up {
+  display: inline-flex;
+}
+.navCustom .dropdown-toggle.show .down {
+  display: none;
+  font-size: 1.4rem;
+}
+
+.theme_btn {
+  overflow: hidden;
+  color: white;
+  background: #EE9A40;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Karla", sans-serif;
+  padding: 20px 70px 20px 44px;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.theme_btn:before {
+  top: 0px;
+  width: 0;
+  left: 0;
+  right: auto;
+  z-index: -1;
+  bottom: 0px;
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  background-color: #0E0E4E;
+}
+.theme_btn .icon {
+  font-size: 21px;
+  background: #fff;
+  color: #FF9800;
+  padding: 7px;
+  border-radius: 50%;
+  position: absolute;
+  right: 9px;
+  transition: all 0.3s ease-in-out;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme_btn .icon iconify-icon {
+  transition: all 0.3s ease-in-out;
+}
+.theme_btn:hover:before {
+  width: 100%;
+}
+.theme_btn:hover iconify-icon {
+  transform: rotateY(180deg);
+  color: #0E0E4E;
+}
+
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.carousel-control-prev-icon {
+  height: 50px;
+  width: 50px;
+}/*# sourceMappingURL=app.css.map */
