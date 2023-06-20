@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -18,14 +18,21 @@ $font-color: #777777;
 .bg-secondary {
     background: $secondary !important;
 }
+.bg-primary{
+    background: $primary !important;
+}
 
 .txt-primary {
     color: $primary;
 }
 
-.justify-content-center-sm{
+.spacer {
+    padding: 80px 15px;
+}
+
+.justify-content-center-sm {
     @media (max-width:768px) {
-      justify-content: center;
+        justify-content: center;
     }
 }
 
@@ -64,6 +71,10 @@ $font-color: #777777;
     src: url(../fonts/TitilliumWeb-Bold.ttf);
 }
 
+.family-bold{
+    font-family: 'Titillium Web-bold', sans-serif;
+}
+
 @media (min-width: 1400px) {
 
     .container,
@@ -76,6 +87,95 @@ $font-color: #777777;
     }
 }
 
+.link-title{
+    line-height: 28px;
+    color: $secondary;
+    font-family: 'Titillium Web-bold', sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+.card-theme {
+    margin-bottom: 15px;
+    background: #F4F2F1;
+    .photo {
+        position: relative;
+        max-height: 220px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .content {
+        position: relative;
+        background: #F4F2F1;
+
+        .box {
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            border-radius: 28px;
+            top: -45px;
+
+            .items {
+                display: flex;
+                align-items: center;
+                flex: 2;
+
+                .subtitle {
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    color: $secondary;
+                    
+                }
+
+                &:nth-child(1) {
+                    padding: 5px;
+                }
+
+                &:nth-child(2) {
+                    flex: 1;
+                    background-color: $primary;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        background-color: $secondary;
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-global {
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $secondary;
+    font-family: 'Titillium Web-bold', sans-serif;
+
+}
+
 
 body {
     font-family: 'karla';
@@ -84,9 +184,56 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Karla", sans-serif;
+    color: #777777;
+    margin-bottom: 0;
+}
+
 .z-index {
     position: relative;
     z-index: 1;
+}
+
+.list-theme {
+    list-style: none;
+    position: relative;
+    margin: 24px 0;
+    padding: 0;
+
+    li {
+        position: inherit;
+        margin: 18px 0 0;
+        padding-left: 37px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $primary;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 5px;
+            top: 14px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid $primary;
+            left: 0;
+            top: 9px;
+            animation: pulseBig infinite 5s linear;
+        }
+    }
 }
 
 // topbar
@@ -324,10 +471,12 @@ body {
         top: 30%;
         left: 11%;
         font-family: 'Titillium Web-bold', sans-serif;
+
         @media (max-width:768px) {
             max-width: 80%;
             text-align: center;
         }
+
         h5 {}
 
         h1 {
@@ -335,18 +484,21 @@ body {
             font-size: 4.2rem;
             font-weight: bold;
             margin: 25px 0;
+
             @media (max-width:768px) {
-                font-size:19px;
+                font-size: 19px;
             }
         }
     }
 
     .carousel-item {
         min-height: 100vh;
-        img{
+
+        img {
             height: 100%;
             object-fit: cover;
         }
+
         &:before {
             content: "";
             background: #08133b;
@@ -394,11 +546,12 @@ body {
                 overflow: hidden;
 
                 img {
-                        width: 100%;
-                        transition: transform 0.4s ease-in-out;
-                        &:hover{
-                            transform: scale(1.1);
-                        }
+                    width: 100%;
+                    transition: transform 0.4s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
 
@@ -479,5 +632,73 @@ body {
                 }
             }
         }
+    }
+}
+
+// about section
+
+.about {
+    background: linear-gradient(to bottom, #F4F2F1, #f4f2f100), url(../images/home/01.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    .about-right {
+
+        h2 {
+            font-size: 2.9rem;
+            font-weight: bold;
+            color: $secondary;
+        }
+    }
+
+    .info-box {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 220px;
+        position: absolute;
+        right: 15px;
+        bottom: -30px;
+        z-index: 2;
+        background: $secondary;
+        padding: 15px;
+        border: 10px solid#fff;
+
+        h1 {
+            font-size: 4rem;
+            color: $primary;
+            flex: 1;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-family: "Barlow Condensed", sans-serif;
+            text-transform: capitalize;
+            font-family: 'karla-bold';
+            color: #fff;
+        }
+    }
+}
+
+.join {
+    background-color: #88893d;
+    color: #fff;
+}
+
+.post-view {}
+
+
+
+@keyframes pulseBig {
+    0% {
+        box-shadow: 0 0 0 0 $primary;
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(199, 179, 1, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(199, 186, 1, 0);
     }
 }
