@@ -638,4 +638,48 @@ p {
 }
 .slick-dots li.slick-active button:before {
   content: unset;
+}
+
+.footer-area {
+  background-color: #0E0E4E;
+  color: #fff;
+}
+.footer-area ul {
+  padding: 0;
+}
+.footer-area ul li {
+  list-style: none;
+}
+.footer-area ul li a {
+  color: #fff;
+  line-height: 34px;
+}
+.footer-area ul li a:hover {
+  color: #EE9A40;
+}
+.footer-area ul li .semi-02-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.footer-area ul li .semi-02-title span {
+  font-size: 15px;
+}
+.footer-area ul li .semi-02-title a {
+  font-size: 20px;
+}
+
+.basis-40 {
+  flex-basis: 40px;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.eventBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
 }/*# sourceMappingURL=app.css.map */

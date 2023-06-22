@@ -10,6 +10,8 @@ a {
 }
 
 
+//  $primary: #6e63ff;
+
 $primary: #EE9A40;
 $secondary: #0E0E4E;
 $font-color: #777777;
@@ -779,5 +781,47 @@ p {
     }
 }
 
+.footer-area{
+   background-color: $secondary; 
+   color: #fff;
+   ul {
+    padding: 0;
+    li{
+        list-style: none;
+        a{
+            color: #fff;
+            line-height: 34px;
+            &:hover{
+                color: $primary;
+               
+            }
+        }
+        .semi-02-title{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            span{
+                font-size: 15px;
+            }
+            a{
+                font-size: 20px; 
+            }
+        }
+       }
+   }
+}
 
+.basis-40{
+    flex-basis: 40px;
+}
+.flex-4{
+    flex: 4;
+}
+
+.eventBox{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 8px;
+}
 
