@@ -760,3 +760,24 @@ p {
         box-shadow: 0 0 0 0 rgba(199, 186, 1, 0);
     }
 }
+
+.partners-section{
+    .slick-slider{
+    height: 90px;
+}
+    background: #F4F2F1;
+}
+.slick-dots li {
+    
+    &.slick-active{
+       button{
+        background: $primary;
+        &:before{
+            content: unset;
+        }
+       }
+    }
+}
+
+
+

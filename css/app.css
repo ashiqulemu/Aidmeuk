@@ -625,4 +625,17 @@ p {
   100% {
     box-shadow: 0 0 0 0 rgba(199, 186, 1, 0);
   }
+}
+.partners-section {
+  background: #F4F2F1;
+}
+.partners-section .slick-slider {
+  height: 90px;
+}
+
+.slick-dots li.slick-active button {
+  background: #EE9A40;
+}
+.slick-dots li.slick-active button:before {
+  content: unset;
 }/*# sourceMappingURL=app.css.map */
