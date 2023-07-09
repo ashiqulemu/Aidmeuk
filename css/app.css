@@ -705,11 +705,18 @@ p {
   padding-left: 12px;
 }
 .donation .donationSelect .items label:focus-within {
-  background-color: #ee9a40;
+  background-color: #0e0e4e;
   font-weight: bold;
   color: #fff;
 }
 .donation .donationSelect .items label:hover {
   background-color: #ee9a40;
   color: #fff;
+}
+
+.form-control:focus {
+  color: #0e0e4e;
+  border-color: #0e0e4e;
+  outline: 0;
+  box-shadow: none;
 }/*# sourceMappingURL=app.css.map */

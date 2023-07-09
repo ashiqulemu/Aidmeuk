@@ -816,7 +816,7 @@ p {
           padding-left: 12px;
         }
         &:focus-within {
-          background-color: $primary;
+          background-color: $secondary;
           font-weight: bold;
           color: #fff;
         }
@@ -827,4 +827,14 @@ p {
       }
     }
   }
+}
+
+.form-control:focus {
+  color: $secondary;
+  border-color: $secondary;
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact{ 
 }
