@@ -109,27 +109,28 @@
                 <div class="donationSelect my-4">
                     <div class="items">
                         <label for="10" class="txt-secondary">
-                            £10 <input type="radio" id="10" name="donate" >
+                            £10 <input type="radio" id="10" value="10" name="donate" onchange="catchAmount(event);" >
                         </label>
                     </div>
                     <div class="items">
                         <label for="20" class="txt-secondary">
-                            £20 <input type="radio" id="20" name="donate" >
+                            £20 <input type="radio" id="20" value="20" name="donate" onchange="catchAmount(event);" >
                         </label>
                     </div>
                     <div class="items">
                         <label for="50" class="txt-secondary">
-                            £50 <input type="radio" id="50" name="donate" >
+                            £50 <input type="radio" id="50" value="50" name="donate" onchange="catchAmount(event);">
                         </label>
                     </div>
                     <div class="items">
                         <label for="100" class="txt-secondary">
-                            £100 <input type="radio" id="100" name="donate" >
+                            £100 <input type="radio" id="100" value="100" name="donate" onchange="catchAmount(event);" >
                         </label>
                     </div>
                     <div class="items">
                         <label for="others" class="d-flex" class="txt-secondary">
-                         <span class="me-2"> others</span> <input type="number" id="others"  >
+                         <span class="me-2"> others</span>
+                          <input type="number" id="others" onchange="catchAmount(event);">
                         </label>
                     </div>
                     
@@ -184,15 +185,11 @@
                                 <option value="">values goes here </option>
                                 <option value="">values goes here </option>
                             </select>
-                        </div>
-                      
-                      
+                        </div> 
                         <div class="form-group mb-3">
                             <label for="" class="mb-1 txt-secondary fw-bold">Email name </label>
                             <input type="text" class="form-control">
-                        </div>
-                      
-                        
+                        </div> 
                     </form>
                 </div> 
                 <div class="col-md-6">
@@ -205,8 +202,13 @@
                         <label class="fw-bold txt-secondary">Your privacy</label>
                       <p>We will always store your personal details securely. We'll use them to provide the service that you have requested, and communicate with you in the way(s) that you have agreed to. Your data may also be used for analysis purposes, to help us provide the best service possible. For full details see our Privacy Policy</p>
                     </div>
+                   <div class="d-flex align-items-center">
+                     <div ></div>
+                   </div>
                     <div class="form-group ">
-                        <button class="btn-theme border-0 ">Submit</button>
+                        <button class="btn-theme border-0 fs-4">Donate
+                          <span id="donate" class="txt-secondary  fw-bold ms-2"></span>
+                        </button>
                      </div>
                 </div>
               </div>
