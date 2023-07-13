@@ -101,7 +101,8 @@
 
     <section class="donation">
         <div class="container">
-            <div class="row my-5">
+            <form action="">
+                <div class="row my-5">
                 <h6 class="title-global my-3">
                     Your donation
                 </h6>
@@ -109,7 +110,7 @@
                 <div class="donationSelect my-4">
                     <div class="items">
                         <label for="10" class="txt-secondary">
-                            £10 <input type="radio" id="10" value="10" name="donate" onchange="catchAmount(event);">
+                            £10 <input type="radio" id="10" value="10" name="donate" onchange="catchAmount(event); " >
                         </label>
                     </div>
                     <div class="items">
@@ -175,7 +176,7 @@
                 </p>
                 <div class="row my-4">
                     <div class="col-md-6">
-                        <form action="">
+                       
                             <div class="form-group mb-3">
                                 <label for="" class="mb-1 txt-secondary fw-bold">First name </label>
                                 <input type="text" class="form-control">
@@ -193,7 +194,7 @@
                                 <label for="" class="mb-1 txt-secondary fw-bold">Email name </label>
                                 <input type="text" class="form-control">
                             </div>
-                        </form>
+                         
                     </div>
                     <div class="col-md-6">
                         <div class="form-group mb-3">
@@ -209,20 +210,23 @@
                                 service possible. For full details see our Privacy Policy</p>
                         </div>
                         
-                            <label class=" d-flex align-items-center alert alert-warning">
-                                <input type="checkbox" class="me-2  " id="prodeccingfee" value=""> Add <span id="process" class="txt-secondary fs-5 fw-bold mx-1"></span> 
+                            <div class=" d-flex align-items-center alert alert-warning">
+                                <input type="checkbox" onfocus="addDonate(event)" class="me-2  " id="prodeccingfee" value=""> Add  £<span id="process" class="txt-secondary fs-5 fw-bold mx-1"></span> 
                                     to cover our payment processing fees 
                                
-                            </label>
+                            </div>
                         
                         <div class="form-group mt-3">
-                            <button class="btn-theme border-0 fs-4">Donate
+                            <button class="btn-theme border-0 fs-4">Donate  £
                                 <span id="donate" class="txt-secondary  fw-bold ms-2"></span>
                             </button>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            </form>
+            
         </div>
     </section>
 

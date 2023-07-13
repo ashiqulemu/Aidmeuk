@@ -726,4 +726,8 @@ p {
 
 .d-flex {
   display: flex !important;
+}
+
+#prodeccingfee:checked {
+  display: none;
 }/*# sourceMappingURL=app.css.map */
