@@ -7,10 +7,9 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
 
 function catchAmount(event){ 
-  document.getElementById("donate").innerHTML = "£"+ event.target.value;
+   let donate = document.getElementById("donate").innerHTML = "£"+ event.target.value;
    let prodeccingfee =  document.getElementById("prodeccingfee").value = event.target.value*2/100;
-   document.getElementById("process").innerHTML  = '£'+ prodeccingfee;
- 
+   document.getElementById("process").innerHTML  = '£'+ prodeccingfee; 
 }
 
  

@@ -722,4 +722,8 @@ p {
   border-color: #0e0e4e;
   outline: 0;
   box-shadow: none;
+}
+
+.d-flex {
+  display: flex !important;
 }/*# sourceMappingURL=app.css.map */
