@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- FOR SEO -->
+    <!-- <meta property='og:title' content='MarinOne soft'/>
+    <meta property='og:image' content='./assets/images/link.jpg'/> 
+    <meta property='og:description' content='DESCRIPTION OF YOUR SITE'/>
+    <meta property='og:url' content='URL OF YOUR WEBSITE'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website'/> -->
+
+    <title>Aidmeuk - Maaser calculator</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap-5.1.3min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-wraper">
+        <div class="sidebar " id="sidebar">
+            <div class="brand">
+                <img src="../dashboard/images/logo.png" width="114px" class="mx-auto" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="make-a-donation.html">Make a donation</a></li>
+                <li><a href="order-voucher-books.html">Order voucher books</a></li>
+                <li><a href="Aidmeuk-card.html">Aidmeuk card</a></li>
+                <li><a href="view-transactions.html">View transactions</a></li>
+                <li><a href="standing-orders.html">Standing orders</a></li>
+                <li><a href="maaser-calculator.html">Maaser calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="bottom-part">
+                <a href="#" class="btn-theme bg-secondary">Order voucher books</a>
+                <a href="#" class="btn-theme bg-primary">Make a donation</a>
+                <a href="#" class="mt-2 d-flex justify-content-center txt-theme fw-bold align-items-center">
+                    <iconify-icon icon="humbleicons:logout"></iconify-icon>
+                    &nbsp;Log out
+                </a>
+            </div>
+            <div class="collapsable" onclick="collaps();">
+                <iconify-icon class="icon" icon="octicon:sidebar-collapse-24"></iconify-icon>
+            </div>
+        </div>
+        <div class="rightbar">
+            <!-- topbar -->
+            <div class="topBar position-relative">
+                <div class="items d-flex justify-content-between align-items-center flex-wrap">
+                    <label for="" class="position-relative">
+                        <iconify-icon class="icon" icon="ic:baseline-search"></iconify-icon>
+                        <input type="text" class="inputSearch" placeholder="Search">
+                    </label>
+                    <div class="txt-theme fs-16">Account Number: <span class="fw-bold">1534</span> </div>
+                </div>
+                <div class="items position-relative d-flex justify-content-end align-items-center">
+                    <div class="dropdown account">
+                        <div class="d-flex align-items-center  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="txt-theme fw-bold fs-16 me-2">Benzion Yehudah Landau</span>
+                            <iconify-icon class="fs-2" icon="mdi:user-circle-outline"></iconify-icon>
+                        </div>
+                        <ul class="dropdown-menu  " aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="my-profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content area -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pagetitle pb-2">
+                            Maaser calculator
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-lg-4">
+                        <div class="calculatior mt-5">
+                            <div>
+                                <div class="fs-37 fw-bold txt-secondary">0.00 GBP</div>
+                                <div class="fs-16 fw-bold txt-secondary">Total maaser Goal</div>
+                                <div class="progress mt-5 mb-3">
+                                    <div class="progress-bar   progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    </div>
+                                </div>
+                                <div class="fs-23 fw-bold txt-primary mb-2 lh-1">You already paid £370.80
+                                    through Aidmeuk</div>
+                                <a href="#" class="fs-16 txt-secondary  ">Add external donation/s </a>
+                                <a href="#" class="btn-theme mt-3 bg-secondary text-white">Make a donation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 py-5">
+                        <div class="fw-bold fs-36 txt-secondary">Add your income </div> <br>
+                        <div class="fw-bold fs-23 txt-secondary border-bottom pb-2">Regualr income</div> <br>
+                        <div class="data-container">
+                            <table class="table table-theme mt-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Start date</th>
+                                        <th scope="col">Income amount</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Frequency</th>
+                                        <th scope="col">Maaser amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="px-1">
+                                            <input type="date" class="form-control" name="" id="">
+                                        </td>
+                                        <td class="px-1">
+                                            <input type="text" placeholder="0.00" class="form-control" width="134px"
+                                                name="" id="">
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1">
+                                            <input type="text" class="form-control  " name="" id="">
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1">
+                                            <select name="" id="" class="form-control w-100">
+                                                <option value="">Monthly</option>
+                                            </select>
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1 text-center">
+                                            <div class="switch">
+                                                <div class="items">
+                                                    <input name="persentage" checked="true" value="10%" type="radio"
+                                                        id="10%">
+                                                    <label for="10%">
+                                                        10%
+                                                    </label>
+                                                </div>
+                                                <div class="items">
+                                                    <input name="persentage" value="20%" type="radio" id="20%">
+                                                    <label for="20%">
+                                                        20%
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3097C0.897 13.0157 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0157 10.8097 13.3097C10.5157 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                    fill="#18988B" />
+                                            </svg>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td class="px-1">
+                                            <input type="date" class="form-control" name="" id="">
+                                        </td>
+                                        <td class="px-1">
+                                            <input type="text" placeholder="0.00" class="form-control" width="134px"
+                                                name="" id="">
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1">
+                                            <input type="text" class="form-control  " name="" id="">
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1">
+                                            <select name="" id="" class="form-control w-100">
+                                                <option value="">Monthly</option>
+                                            </select>
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1 text-center">
+                                            <div class="switch">
+                                                <div class="items">
+                                                    <input name="persentage" checked="true" value="10%" type="radio"
+                                                        id="10%">
+                                                    <label for="10%">
+                                                        10%
+                                                    </label>
+                                                </div>
+                                                <div class="items">
+                                                    <input name="persentage" value="20%" type="radio" id="20%">
+                                                    <label for="20%">
+                                                        20%
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3097C0.897 13.0157 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0157 10.8097 13.3097C10.5157 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                    fill="#18988B" />
+                                            </svg>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>
+                                            <span class="fs16 txt-primary">Add more +</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="fw-bold fs-23 txt-secondary border-bottom pb-2">One-off income</div> <br>
+                        <div class="data-container">
+                            <table class="table table-theme mt-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Start date</th>
+                                        <th scope="col">Income amount</th>
+                                        <th scope="col">Description</th>
+                                        
+                                        <th scope="col">Maaser amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="px-1">
+                                            <input type="date" class="form-control" name="" id="">
+                                        </td>
+                                        <td class="px-1">
+                                            <input type="text" placeholder="0.00" class="form-control" width="134px"
+                                                name="" id="">
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary px-1">
+                                            <input type="text" class="form-control  " name="" id="">
+                                        </td>
+                                       
+                                        <td class="fs-16 txt-secondary px-1 text-center">
+                                            <div class="switch">
+                                                <div class="items">
+                                                    <input name="persentage" checked="true" value="10%" type="radio"
+                                                        id="10%">
+                                                    <label for="10%">
+                                                        10%
+                                                    </label>
+                                                </div>
+                                                <div class="items">
+                                                    <input name="persentage" value="20%" type="radio" id="20%">
+                                                    <label for="20%">
+                                                        20%
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3097C0.897 13.0157 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0157 10.8097 13.3097C10.5157 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                    fill="#18988B" />
+                                            </svg>
+
+                                        </td>
+                                    </tr>
+                                     
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>
+                                            <span class="fs16 txt-primary">Add more +</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <button class="btn-theme me-5 bg-secondary text-white float-end">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.bundle.min.js"></script>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        for (var i = 0; i < document.links.length; i++) {
+            if (document.links[i].href === document.URL) {
+                document.links[i].className = 'nav-link current';
+            }
+        }
+    </script>
+
+    <!--  <script>
+        document.onkeydown = function(e) {
+          if (e.ctrlKey && e.keyCode === 85) { 
+             alert("you cant get my code ever :)");
+             return false;
+          }
+        };
+       </script> -->
+
+</body>
+
+</html>

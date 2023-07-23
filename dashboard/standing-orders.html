@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- FOR SEO -->
+    <!-- <meta property='og:title' content='MarinOne soft'/>
+    <meta property='og:image' content='./assets/images/link.jpg'/> 
+    <meta property='og:description' content='DESCRIPTION OF YOUR SITE'/>
+    <meta property='og:url' content='URL OF YOUR WEBSITE'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website'/> -->
+
+    <title>Aidmeuk - Standing orders</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap-5.1.3min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-wraper">
+        <div class="sidebar " id="sidebar">
+            <div class="brand">
+                <img src="../dashboard/images/logo.png" width="114px" class="mx-auto" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="make-a-donation.html">Make a donation</a></li>
+                <li><a href="order-voucher-books.html">Order voucher books</a></li>
+                <li><a href="Aidmeuk-card.html">Aidmeuk card</a></li>
+                <li><a href="view-transactions.html">View transactions</a></li>
+                <li><a href="standing-orders.html">Standing orders</a></li>
+                <li><a href="maaser-calculator.html">Maaser calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="bottom-part">
+                <a href="#" class="btn-theme bg-secondary">Order voucher books</a>
+                <a href="#" class="btn-theme bg-primary">Make a donation</a>
+                <a href="#" class="mt-2 d-flex justify-content-center txt-theme fw-bold align-items-center">
+                    <iconify-icon icon="humbleicons:logout"></iconify-icon>
+                    &nbsp;Log out
+                </a>
+            </div>
+            <div class="collapsable" onclick="collaps();">
+                <iconify-icon class="icon" icon="octicon:sidebar-collapse-24"></iconify-icon>
+            </div>
+        </div>
+        <div class="rightbar">
+            <!-- topbar -->
+            <div class="topBar position-relative">
+                <div class="items d-flex justify-content-between align-items-center flex-wrap">
+                    <label for="" class="position-relative">
+                        <iconify-icon class="icon" icon="ic:baseline-search"></iconify-icon>
+                        <input type="text" class="inputSearch" placeholder="Search">
+                    </label>
+                    <div class="txt-theme fs-16">Account Number: <span class="fw-bold">1534</span> </div>
+                </div>
+                <div class="items position-relative d-flex justify-content-end align-items-center">
+                    <div class="dropdown account">
+                        <div class="d-flex align-items-center  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="txt-theme fw-bold fs-16 me-2">Benzion Yehudah Landau</span>
+                            <iconify-icon class="fs-2" icon="mdi:user-circle-outline"></iconify-icon>
+                        </div>
+                        <ul class="dropdown-menu  " aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="my-profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content area -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pagetitle pb-2">
+                            Standing orders
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-lg-12">
+                        <button class="btn-theme bg-primary text-white">Set up a standing order</button>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="data-container">
+                            <table class="table table-theme mt-4">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Recipient details</th>
+                                        <th scope="col">Reference</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Frequency</th>
+                                        <th scope="col">Next payment</th>
+                                        <th scope="col">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fs-20 txt-secondary fw-bold">Kollel Skver Trust 09-01-55, <br> 74872086
+                                        </td>
+                                        <td>
+                                            <span class="fs-16 txt-secondary">Charity 1087348</span>
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            £50.00
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            Monthly
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            01/02/2023
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.0375 13.25L10.175 11.1312L8.0375 9.0125L7.25 9.8L8.05625 10.6063C7.70625 10.6188 7.36575 10.5625 7.03475 10.4375C6.70325 10.3125 6.40625 10.1188 6.14375 9.85625C5.89375 9.60625 5.703 9.31875 5.5715 8.99375C5.4405 8.66875 5.375 8.34375 5.375 8.01875C5.375 7.80625 5.40325 7.59375 5.45975 7.38125C5.51575 7.16875 5.59375 6.9625 5.69375 6.7625L4.86875 5.9375C4.65625 6.25 4.5 6.58125 4.4 6.93125C4.3 7.28125 4.25 7.6375 4.25 8C4.25 8.475 4.34375 8.94375 4.53125 9.40625C4.71875 9.86875 4.99375 10.2812 5.35625 10.6437C5.71875 11.0062 6.125 11.2783 6.575 11.4598C7.025 11.6408 7.4875 11.7375 7.9625 11.75L7.25 12.4625L8.0375 13.25ZM11.1312 10.0625C11.3437 9.75 11.5 9.41875 11.6 9.06875C11.7 8.71875 11.75 8.3625 11.75 8C11.75 7.525 11.6595 7.053 11.4785 6.584C11.297 6.1155 11.025 5.7 10.6625 5.3375C10.3 4.975 9.89075 4.70625 9.43475 4.53125C8.97825 4.35625 8.5125 4.26875 8.0375 4.26875L8.75 3.5375L7.9625 2.75L5.825 4.86875L7.9625 6.9875L8.75 6.2L7.925 5.375C8.2625 5.375 8.60625 5.4405 8.95625 5.5715C9.30625 5.703 9.60625 5.89375 9.85625 6.14375C10.1063 6.39375 10.297 6.68125 10.4285 7.00625C10.5595 7.33125 10.625 7.65625 10.625 7.98125C10.625 8.19375 10.5968 8.40625 10.5402 8.61875C10.4843 8.83125 10.4062 9.0375 10.3062 9.2375L11.1312 10.0625ZM8 15.5C6.9625 15.5 5.9875 15.303 5.075 14.909C4.1625 14.5155 3.36875 13.9813 2.69375 13.3063C2.01875 12.6313 1.4845 11.8375 1.091 10.925C0.697 10.0125 0.5 9.0375 0.5 8C0.5 6.9625 0.697 5.9875 1.091 5.075C1.4845 4.1625 2.01875 3.36875 2.69375 2.69375C3.36875 2.01875 4.1625 1.48425 5.075 1.09025C5.9875 0.69675 6.9625 0.5 8 0.5C9.0375 0.5 10.0125 0.69675 10.925 1.09025C11.8375 1.48425 12.6313 2.01875 13.3063 2.69375C13.9813 3.36875 14.5155 4.1625 14.909 5.075C15.303 5.9875 15.5 6.9625 15.5 8C15.5 9.0375 15.303 10.0125 14.909 10.925C14.5155 11.8375 13.9813 12.6313 13.3063 13.3063C12.6313 13.9813 11.8375 14.5155 10.925 14.909C10.0125 15.303 9.0375 15.5 8 15.5ZM8 14C9.675 14 11.0937 13.4187 12.2562 12.2562C13.4187 11.0937 14 9.675 14 8C14 6.325 13.4187 4.90625 12.2562 3.74375C11.0937 2.58125 9.675 2 8 2C6.325 2 4.90625 2.58125 3.74375 3.74375C2.58125 4.90625 2 6.325 2 8C2 9.675 2.58125 11.0937 3.74375 12.2562C4.90625 13.4187 6.325 14 8 14Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">Amend</span>
+                                                </div>
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3098C0.897 13.0158 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0158 10.8098 13.3098C10.5158 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">
+                                                        Delete
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="fs-20 txt-secondary fw-bold">Newsheet 40-03-19, <br> 21593064
+                                        </td>
+                                        <td>
+                                            <span class="fs-16 txt-secondary">ADS</span>
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            £72.00
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            Monthly
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            15/02/2023
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.0375 13.25L10.175 11.1312L8.0375 9.0125L7.25 9.8L8.05625 10.6063C7.70625 10.6188 7.36575 10.5625 7.03475 10.4375C6.70325 10.3125 6.40625 10.1188 6.14375 9.85625C5.89375 9.60625 5.703 9.31875 5.5715 8.99375C5.4405 8.66875 5.375 8.34375 5.375 8.01875C5.375 7.80625 5.40325 7.59375 5.45975 7.38125C5.51575 7.16875 5.59375 6.9625 5.69375 6.7625L4.86875 5.9375C4.65625 6.25 4.5 6.58125 4.4 6.93125C4.3 7.28125 4.25 7.6375 4.25 8C4.25 8.475 4.34375 8.94375 4.53125 9.40625C4.71875 9.86875 4.99375 10.2812 5.35625 10.6437C5.71875 11.0062 6.125 11.2783 6.575 11.4598C7.025 11.6408 7.4875 11.7375 7.9625 11.75L7.25 12.4625L8.0375 13.25ZM11.1312 10.0625C11.3437 9.75 11.5 9.41875 11.6 9.06875C11.7 8.71875 11.75 8.3625 11.75 8C11.75 7.525 11.6595 7.053 11.4785 6.584C11.297 6.1155 11.025 5.7 10.6625 5.3375C10.3 4.975 9.89075 4.70625 9.43475 4.53125C8.97825 4.35625 8.5125 4.26875 8.0375 4.26875L8.75 3.5375L7.9625 2.75L5.825 4.86875L7.9625 6.9875L8.75 6.2L7.925 5.375C8.2625 5.375 8.60625 5.4405 8.95625 5.5715C9.30625 5.703 9.60625 5.89375 9.85625 6.14375C10.1063 6.39375 10.297 6.68125 10.4285 7.00625C10.5595 7.33125 10.625 7.65625 10.625 7.98125C10.625 8.19375 10.5968 8.40625 10.5402 8.61875C10.4843 8.83125 10.4062 9.0375 10.3062 9.2375L11.1312 10.0625ZM8 15.5C6.9625 15.5 5.9875 15.303 5.075 14.909C4.1625 14.5155 3.36875 13.9813 2.69375 13.3063C2.01875 12.6313 1.4845 11.8375 1.091 10.925C0.697 10.0125 0.5 9.0375 0.5 8C0.5 6.9625 0.697 5.9875 1.091 5.075C1.4845 4.1625 2.01875 3.36875 2.69375 2.69375C3.36875 2.01875 4.1625 1.48425 5.075 1.09025C5.9875 0.69675 6.9625 0.5 8 0.5C9.0375 0.5 10.0125 0.69675 10.925 1.09025C11.8375 1.48425 12.6313 2.01875 13.3063 2.69375C13.9813 3.36875 14.5155 4.1625 14.909 5.075C15.303 5.9875 15.5 6.9625 15.5 8C15.5 9.0375 15.303 10.0125 14.909 10.925C14.5155 11.8375 13.9813 12.6313 13.3063 13.3063C12.6313 13.9813 11.8375 14.5155 10.925 14.909C10.0125 15.303 9.0375 15.5 8 15.5ZM8 14C9.675 14 11.0937 13.4187 12.2562 12.2562C13.4187 11.0937 14 9.675 14 8C14 6.325 13.4187 4.90625 12.2562 3.74375C11.0937 2.58125 9.675 2 8 2C6.325 2 4.90625 2.58125 3.74375 3.74375C2.58125 4.90625 2 6.325 2 8C2 9.675 2.58125 11.0937 3.74375 12.2562C4.90625 13.4187 6.325 14 8 14Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">Amend</span>
+                                                </div>
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3098C0.897 13.0158 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0158 10.8098 13.3098C10.5158 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">
+                                                        Delete
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="fs-20 txt-secondary fw-bold">Kollel Harabanim 09-01-55, <br> 74872086
+                                        </td>
+                                        <td>
+                                            <span class="fs-16 txt-secondary">Monthly donation from Initact</span>
+
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            £50.00
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            Annually
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            28/01/2024
+                                        </td>
+                                        <td class="fs-16 txt-secondary">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8.0375 13.25L10.175 11.1312L8.0375 9.0125L7.25 9.8L8.05625 10.6063C7.70625 10.6188 7.36575 10.5625 7.03475 10.4375C6.70325 10.3125 6.40625 10.1188 6.14375 9.85625C5.89375 9.60625 5.703 9.31875 5.5715 8.99375C5.4405 8.66875 5.375 8.34375 5.375 8.01875C5.375 7.80625 5.40325 7.59375 5.45975 7.38125C5.51575 7.16875 5.59375 6.9625 5.69375 6.7625L4.86875 5.9375C4.65625 6.25 4.5 6.58125 4.4 6.93125C4.3 7.28125 4.25 7.6375 4.25 8C4.25 8.475 4.34375 8.94375 4.53125 9.40625C4.71875 9.86875 4.99375 10.2812 5.35625 10.6437C5.71875 11.0062 6.125 11.2783 6.575 11.4598C7.025 11.6408 7.4875 11.7375 7.9625 11.75L7.25 12.4625L8.0375 13.25ZM11.1312 10.0625C11.3437 9.75 11.5 9.41875 11.6 9.06875C11.7 8.71875 11.75 8.3625 11.75 8C11.75 7.525 11.6595 7.053 11.4785 6.584C11.297 6.1155 11.025 5.7 10.6625 5.3375C10.3 4.975 9.89075 4.70625 9.43475 4.53125C8.97825 4.35625 8.5125 4.26875 8.0375 4.26875L8.75 3.5375L7.9625 2.75L5.825 4.86875L7.9625 6.9875L8.75 6.2L7.925 5.375C8.2625 5.375 8.60625 5.4405 8.95625 5.5715C9.30625 5.703 9.60625 5.89375 9.85625 6.14375C10.1063 6.39375 10.297 6.68125 10.4285 7.00625C10.5595 7.33125 10.625 7.65625 10.625 7.98125C10.625 8.19375 10.5968 8.40625 10.5402 8.61875C10.4843 8.83125 10.4062 9.0375 10.3062 9.2375L11.1312 10.0625ZM8 15.5C6.9625 15.5 5.9875 15.303 5.075 14.909C4.1625 14.5155 3.36875 13.9813 2.69375 13.3063C2.01875 12.6313 1.4845 11.8375 1.091 10.925C0.697 10.0125 0.5 9.0375 0.5 8C0.5 6.9625 0.697 5.9875 1.091 5.075C1.4845 4.1625 2.01875 3.36875 2.69375 2.69375C3.36875 2.01875 4.1625 1.48425 5.075 1.09025C5.9875 0.69675 6.9625 0.5 8 0.5C9.0375 0.5 10.0125 0.69675 10.925 1.09025C11.8375 1.48425 12.6313 2.01875 13.3063 2.69375C13.9813 3.36875 14.5155 4.1625 14.909 5.075C15.303 5.9875 15.5 6.9625 15.5 8C15.5 9.0375 15.303 10.0125 14.909 10.925C14.5155 11.8375 13.9813 12.6313 13.3063 13.3063C12.6313 13.9813 11.8375 14.5155 10.925 14.909C10.0125 15.303 9.0375 15.5 8 15.5ZM8 14C9.675 14 11.0937 13.4187 12.2562 12.2562C13.4187 11.0937 14 9.675 14 8C14 6.325 13.4187 4.90625 12.2562 3.74375C11.0937 2.58125 9.675 2 8 2C6.325 2 4.90625 2.58125 3.74375 3.74375C2.58125 4.90625 2 6.325 2 8C2 9.675 2.58125 11.0937 3.74375 12.2562C4.90625 13.4187 6.325 14 8 14Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">Amend</span>
+                                                </div>
+                                                <div class="fs-16 txt-primary d-flex align-items-center">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.05 10.375L6 8.425L7.95 10.375L9 9.325L7.05 7.375L9 5.425L7.95 4.375L6 6.325L4.05 4.375L3 5.425L4.95 7.375L3 9.325L4.05 10.375ZM2.25 13.75C1.8375 13.75 1.4845 13.6033 1.191 13.3098C0.897 13.0158 0.75 12.6625 0.75 12.25V2.5H0V1H3.75V0.25H8.25V1H12V2.5H11.25V12.25C11.25 12.6625 11.1033 13.0158 10.8098 13.3098C10.5158 13.6033 10.1625 13.75 9.75 13.75H2.25ZM9.75 2.5H2.25V12.25H9.75V2.5Z"
+                                                            fill="#18988B" />
+                                                    </svg>
+                                                    <span class="ms-2">
+                                                        Delete
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.bundle.min.js"></script>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        for (var i = 0; i < document.links.length; i++) {
+            if (document.links[i].href === document.URL) {
+                document.links[i].className = 'nav-link current';
+            }
+        }
+    </script>
+
+    <!--  <script>
+        document.onkeydown = function(e) {
+          if (e.ctrlKey && e.keyCode === 85) { 
+             alert("you cant get my code ever :)");
+             return false;
+          }
+        };
+       </script> -->
+
+</body>
+
+</html>
