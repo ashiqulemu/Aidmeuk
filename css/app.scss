@@ -396,6 +396,7 @@ p {
   border-radius: 30px;
   position: relative;
   z-index: 1;
+  border: 0;
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -848,3 +849,56 @@ p {
 #prodeccingfee:checked{
   display: none;
 }
+
+
+.cursor-pointer{
+  cursor: pointer;
+}
+.profile .profile-card img {
+  width: 120px;
+  height: 120px;
+}
+.profile .profile-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c384e;
+  margin: 10px 0 0 0;
+}
+.profile .profile-card h3 {
+  font-size: 18px;
+}
+.nav-tabs .nav-link {
+  color: $secondary;
+  border: 0;
+   
+}
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: $primary;
+  border-bottom: 2px solid $primary;
+}
+
+.datatable{
+  .dataTables_length {
+      margin-bottom: 40px;
+    }
+    .sorting{
+      background: $primary;
+      color: $secondary;
+    }
+   
+}
+
+#example_paginate{
+  .paginate_button {
+    background: $primary;
+    color: #fff!important;
+  }
+  .paginate_button {
+    &.current{
+      background: $secondary;
+      color: #fff;
+    }
+  }
+}
+
